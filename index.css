@@ -117,9 +117,11 @@ body{
 
 /* */
 .container{
-  margin: 0px aUTO;
-  width: 70%;
+  width: 100%;
   background: rgb(229,229,229, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container .title{
   text-align: center;
@@ -134,13 +136,12 @@ body{
 }
 
 .container .card{
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgb(166,221,236,0.4);
+  background: rgb(166,221,236,0);
   border-radius: 0px 0px 10px 10px;
+  margin: 0px 15px;
 }
 .container .card img{
   width: 200px;
@@ -161,8 +162,8 @@ body{
   margin: 40px 23px;
 }
 .category{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
 }
 .container .card img:hover{
   opacity: 0.6;
@@ -170,9 +171,10 @@ body{
 }
 .row{
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .row_1 img:hover{
   opacity: 0.8;
@@ -190,13 +192,13 @@ body{
 .row .row_1{
   margin: 10px 12px;
   position: relative;
-  width: 200px;
+
   height: 340px;
   border: 1px solid rgb(215,215,215, 0.2);
   padding: 6px 0px 0px 0px;
 }
 .row .row_1 img{
-  width: 200px;
+  width: 100%;
   width: 200px;
   content: "";
   border: 2px solid rgb(229,108,90);
